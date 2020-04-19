@@ -33,6 +33,10 @@ h3{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	padding-bottom: 10px;
 }
+
+a{
+	text-decoration: none;
+}
 /*-----------------------------------------HEADER--------------------------------------------*/
 header{
 	width: 100%;
@@ -89,7 +93,7 @@ ul.headlinks li{
 .main{
 	width: 100%;
 	min-height: 550px;
-	padding-top: 50px;
+	padding-top: 10px;
 	text-align: center;
 }
 
@@ -98,6 +102,7 @@ ul.headlinks li{
 	border: 1px solid white;
 	vertical-align: top;
 	background-color: rgba(0,0,0,0.9);
+	margin-top: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	cursor: pointer;
@@ -124,6 +129,7 @@ ul.headlinks li{
 	border: 1px solid white;
 	vertical-align: top;
 	background-color: rgba(0,0,0,0.9);
+	margin-top: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-left: 3%;
@@ -144,6 +150,7 @@ ul.headlinks li{
 	border: 1px solid white;
 	vertical-align: top;
 	background-color: rgba(0,0,0,0.9);
+	margin-top: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	width: 30%;
@@ -160,6 +167,7 @@ ul.headlinks li{
 .aut_line{
 	margin: 0 auto;
 	margin-bottom: 40px;
+	color: white;
 	width: 90%;
 }
 
@@ -170,17 +178,180 @@ ul.headlinks li{
 	cursor: pointer;
 	transition: all 0.2s ease-out;
 }
+/*-------------------------------------LIBRARY-----------------------------------------------*/
+.library{
+	display: inline-block;
+	border: 1px solid white;
+	border-left: none;
+	vertical-align: top;
+	background-color: rgba(0,0,0,0.9);
+	margin-right: 3%;
+	float: left;
+	width: 100%;
+	min-height: 40px;
+	transition: all 0.2s ease-out;
+}
 
-/*-----------------------------------------HEADER--------------------------------------------*/
+.library ul li{
+	display: inline-block;
+	margin-top: none;
+	margin-bottom: 15px;
+	margin-left: 2%;
+	margin-right: 2%;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+}
+
+.library ul li:hover{
+	letter-spacing: 1px;
+}
+
+.library ul li p{
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 20px;
+	transition: all 0.2s ease-out;
+}
+
+.library ul li p:hover{
+	color: #ccad00;
+}
+
+.library_type{
+	display: inline-block;
+	background-color: rgba(0,0,0,0.9);
+	width: 20%;
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+	border: 1px solid white;
+	min-height: 450px;
+	transition: all 0.2s ease-out;
+}
+
+.library_type:hover{
+	transform: scale(1.05);
+}
+
+.library_type p{
+    text-align: center;
+	margin-top: 10px;
+	font-size: 26px;
+}
+
+.type{
+	display: none;
+}
+/*-----------------------------------------TEST--------------------------------------------*/
+section{
+	display: inline-block;
+	border: 1px solid white;
+	vertical-align: top;
+	background-color: rgba(0,0,0,0.9);
+	margin-top: 30px;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 30%;
+	min-height: 440px;
+	transition: all 0.2s ease-out;
+}
+
+section:hover{
+	transform: scale(1.05);
+	background-color: rgba(1,14,7,0.95);
+}
+
+.main section h2{
+	color: white;
+	font-size: 32px;
+	padding-bottom: 10px;
+}
+
+.main section hr{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.main section p.qest{
+	color: white;
+	font-size: 20px;
+}
+
+.main section ul{
+	text-align: left;
+}
+
+.main section ul li{
+	color: white;
+}
+
+.buttons_s{
+	margin: 0 auto;
+	margin-top: 20px;
+	padding-top: 10px;
+	border: 1px solid white;
+	width: 20%;
+	height: 40px;
+	cursor: pointer;
+	background-color: rgba(0,0,0,1);
+	transition: all 0.2s ease-out;
+}
+
+.buttons_s:hover{
+	transform: scale(1.05);
+}
+
+.buttons_s p{
+	text-align: center;
+	color: white;
+	transition: all 0.2s ease-out;
+}
+
+.buttons_s p:hover{
+	color: #ccad00;
+}
+
+.main section p.true_ans{
+	display: none;
+	color: white;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+button{
+	border: none; 
+	color: white;
+	font-size: 20px;
+	background-color: rgba(0,0,0,1);
+	outline: none; 
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+}
+
+button:hover{
+	color: #ccad00;
+}
+
+input{
+	margin-left: 20px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+/*-----------------------------------------FOOTER--------------------------------------------*/
 footer{
 	width: 100%;
 	min-height: 80px;
 	text-align: center;
+	margin-top: 20px;
 	background-color: rgba(0,0,0,1);
 }
 
 footer p{
 	display: inline-block;
+	min-height: 30px;
 	margin-top: 15px;
 	margin-left: 7%;
 	margin-right: 7%;
@@ -216,6 +387,11 @@ footer p:hover{
 	     font-size: 20px;
 	}
 	
+	section{
+	width: 45%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 981px){
@@ -249,6 +425,16 @@ footer p:hover{
 		 margin-left: 6%;
 	     margin-right: 6%;
 	}
+	
+	.library ul li p{
+	    font-size: 16px;
+    }
+	
+    section{
+	   width: 45%;
+	   margin-left: 2%;
+	   margin-right: 2%;
+}
 }
 
 @media screen and (min-width: 560px) and (max-width: 767px){
@@ -297,6 +483,13 @@ footer p:hover{
 		 margin-top: 10px;
 		 height: 61px;
 		 width: 61px;
+		 cursor: pointer;
+		 transition: all 0.2s ease-out;
+	}
+	
+	.mobile_head_link:hover{
+		 background-color: #ccad00;
+		 transform: scale(1.2);
 	}
 	
 	.mobile_head_link.home{
@@ -327,6 +520,22 @@ footer p:hover{
 	footer p{
 		 margin-left: 4.5%;
 	     margin-right: 4.5%;
+	}
+	
+	.library ul li p{
+	    font-size: 16px;
+    }
+	
+    section{
+	   width: 80%;
+	   display: block;
+	   margin: 0 auto;
+	   margin-top: 10px;
+	   margin-bottom: 25px;
+    }
+	
+	.buttons_s{
+		width: 35%;
 	}
 }
 
@@ -376,7 +585,13 @@ footer p:hover{
 		 margin-right: 3%;
 		 height: 61px;
 		 width: 61px;
-		 
+		 cursor: pointer;
+		 transition: all 0.2s ease-out;
+	}
+	
+	.mobile_head_link:hover{
+		 background-color: #ccad00;
+		 transform: scale(1.05);
 	}
 			
 	.articles{
@@ -416,5 +631,21 @@ footer p:hover{
 		 font-size: 20px;
 		 margin-left: 4%;
 	     margin-right: 4%;
+	}
+	
+	.library ul li p{
+	    font-size: 14px;
+    }
+	
+	section{
+	   width: 80%;
+	   display: block;
+	   margin: 0 auto;
+	   margin-top: 10px;
+	   margin-bottom: 25px;
+    }
+	
+	.buttons_s{
+		width: 50%;
 	}
 }
