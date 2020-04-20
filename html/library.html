@@ -7,18 +7,18 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <link rel="stylesheet" type="text/css" href="../css/index.css">
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	 <script type="text/javascript" src="../js/scripts.js"></script>
+	 <script type="text/javascript" src="../js/scripts_1.js"></script>
 </head>
 
 <body>
      <header>
-	     <div class="logotype"><h1>H T M Light</h1></div>
+	     <div class="logotype" title="Разработчик Голинский.Н.Е."><h1>H T M Light</h1></div>
 	     <div class="comp_header">
 		     <div class="header_links">
 		         <ul class="headlinks">
 		             <li><a class="head_link">Information</a></li>
 			         <li><a class="head_link" href="library.html">Library</a></li>
-			         <li><a class="head_link">Tests</a></li>
+			         <li><a class="head_link" href="../index.html">Tests</a></li>
 			         <li><a class="head_link" href="../index.html">Home</a></li>
 			     </ul>
 		     </div>
@@ -26,83 +26,239 @@
 		 
 		 <div class="mobile_header">
 			 <div class="mobile_head_link"><a><img src="../images/Logo_4.png"></a></div>
-			 <div class="mobile_head_link"><a><img src="../images/Logo_3.png"></a></div>
-			 <div class="mobile_head_link"><a><img src="../images/Logo_2.png"></a></div>
-		     <div class="mobile_head_link home"><a><img src="../images/Logo_1.png"></a></div>
+			 <div class="mobile_head_link"><a href="library.html"><img src="../images/Logo_3.png"></a></div>
+			 <div class="mobile_head_link"><a href="../index.html"><img src="../images/Logo_2.png"></a></div>
+		     <div class="mobile_head_link home"><a  href="../index.html"><img src="../images/Logo_1.png"></a></div>
 		 </div>	 
      </header>
  
      <div class="main">
-         <div class="library">
+         <div class="library" title="Используйте это окно, чтобы сортировать теги">
              <ul>
-			     <li class="linker" onclick="call_links()"><p>Основные теги</p></li>
-				 <li class="linker" onclick="call_links()"><p>Блочные теги</p></li>
-				 <li class="linker" onclick="call_links()"><p>Строчные теги</p></li>
-				 <li class="linker" onclick="call_links()"><p>Табличные теги</p></li>
-				 <li class="linker" onclick="call_links()"><p>Теги для списка</p></li>
-				 <li class="linker" onclick="call_links()"><p>Семант. теги HTML5</p></li>
+			     <li id="libr_1" class="linker"><p>Основные теги</p></li>
+				 <li id="libr_2" class="linker"><p>Блочные теги</p></li>
+				 <li id="libr_3" class="linker"><p>Строчные теги</p></li>
+				 <li id="libr_4" class="linker"><p>Табличные теги</p></li>
+				 <li id="libr_5" class="linker"><p>Теги для списка</p></li>
+				 <li id="libr_6" class="linker"><p>Семант. теги HTML5</p></li>
              </ul>
-         </div>		
-
-         <div class="library_type">
-		     <h3>List</h3>
-			 <hr class="aut_line">
-			 
-			 <div class="type">
-                 <p>html</p>
-		         <p>head</p>
-			     <p>body</p>
-			 </div>
-			 
-			 <div class="type">
-                 <p>h1...р6</p>
-		         <p>div</p>
-			     <p>hr</p>
-				 <p>p</p>
-				 <p>pre</p>
-			     <p>hr</p>
-				 <p>form</p>
-			 </div>
-			
-			 <div class="type">
-                 <p>a</p>
-		         <p>br</p>
-			     <p>img</p>
-				 <p>sub</p>
-				 <p>sup</p>
-			     <p>b</p>
-				 <p>i</p>
-			 </div>
-			
-			 <div class="type">
-                 <p>table</p>
-		         <p>tr</p>
-			     <p>td</p>
-				 <p>th</p>
-			 </div>
-			
-			 <div class="type">
-                 <p>ol</p>
-		         <p>ul</p>
-			     <p>li</p>
-				 <p>dd</p>
-				 <p>dt</p>
-				 <p>dl</p>
-			 </div>
-			
-			 <div class="type">
-                 <p>header</p>
-		         <p>main</p>
-			     <p>footer</p>
-				 <p>nav</p>
-				 <p>aricle</p>
-				 <p>aside</p>
-				 <p>section</p>
-			 </div>
-         </div>		
+         </div>				 
+		 
+         <section class="library_tags">
+			     <h2>&lt;html&gt;</h2>
+				 <hr>
+				 <p class="library_word">Тег html предстовляет собой что-то вроде контейнера, внутри которого будет располагаться все содержимое web-страницы.
+				 Именно с этого тега начинается верстка.</p>	
+                 <p class="library_word">Примечательные атрибуты:</p>		
+                 <p class="library_word">title - добовляет всплывающую подсказку на веб-страницу</p>
+                 <p class="library_word">manifest - позволяет определять ресурсы веб-документа, которые будут сохранены у пользователя</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;head&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег является контейнером, который хранит в себе информацию, предназначенную для браузеров и поисковых
+				 систем. Так же здесь располагаются теги, чьи задачи указывать путь к файлам со стилями ("css") и скриптами.</p>	
+                 <p class="library_word">Основые теги в head:</p>		
+                 <p class="library_word">title - предназначен для указания имени web-страницы.</p>	
+                 <p class="library_word">meta - в атрибутах данного тега указывается информация, помогающаю браузеру правильно
+				 обрабатывать и идексировать веб-странцицу. Например здесь можно указать кодировку.</p>	
+                 <p class="library_word">link - необходим для указания ссылки на файл со стилями или шрифтами.</p>	
+                 <p class="library_word">script - при указании данного тега в head, позволяет установить ссылку на документ со скриптами. 
+				 Скрипт, заключюченный в данный тег и расположенный в head будет выполнен в 1-ую очередь.</p>					 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;body&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег будет содержать в себе все то, что будет отображаться на странице.</p>	
+                 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;a&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег позволяет создавать ссылки на другие документы или интернет ресурсы.</p>	
+				 <p class="library_word">Примечательные атрибуты:</p>
+				 <p class="library_word">href - здесь необходмо указывать адрес документа или ресурса, на который следует перейти</p>
+                 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;br&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег создает разрыв строки.</p>	
+                 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;sub&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег отображает содержимое в виде нижнего индекса.</p>	
+                 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;sup&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег отображает содержимое в виде верхнего индекса.</p>	
+                 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;img&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег позволяет отображать на странице изображения.</p>
+                 <p class="library_word">Примечательные атрибуты:</p>	
+                 <p class="library_word">src - здесь указывается путь или ссылка на графический файл;</p>		
+                 <p class="library_word">height - задает высоту изображения. Высоту изображения лучше менять средствами css;</p>
+                 <p class="library_word">width - задает ширину изображения. Ширину изображения лучше менять средствами css;</p>		
+                 <p class="library_word">alt - фраза, заключюченная в этот атрибут, будет отображаться в случае, когда невозможно загрузить изображение;</p>					 
+                 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;p&gt;</h2>
+				 <hr>
+				 <p class="library_word">Один из самых важных тегов в HTML. Предназначен он для разбития текста на абзацы.</p>
+				 <p class="library_word">Примечательные атрибуты:</p>		
+                 <p class="library_word">align - отвечает за выравниевание текста. Вместо данного атрибута желательно использовать аналог в css "text-align".</p>
+				 <p class="library_word">Так же данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;div&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег предназначен для выделения какой-то части документа в блок, который позже можно редактировать
+				 средствами css. <p>
+				 <p class="library_word">Примечательные атрибуты:</p>		
+                 <p class="library_word">align - отвечает за выравниевание текста. Вместо данного атрибута желательно использовать аналог в css "text-align".</p>
+				 <p class="library_word">title - при наведении на область, которую занимает div, будет всплывать подсказка.</p>
+				 <p class="library_word">Так же данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>
+		 </section>	
+		 
+		  <section class="library_tags">
+			     <h2>&lt;hr&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег создает горизонтальную линию. <p>
+				 <p class="library_word">Примечательные атрибуты:</p>		
+                 <p class="library_word">width - ширина линии. Задав класс данному тегу, можно настраивать ширину средствами css, что с точки зрении структуры кода правильнее.</p>
+				 <p class="library_word">color - определяет цвет линии. Точно так же, как и с шириной, данный параметр можно настроить через стили.</p>
+				 <p class="library_word">size - определяет толщину линии. Так же можно задать через стили.</p>
+				 <p class="library_word">align - определяет выравнивание линии. Так же можно задать через стили.</p>
+				 <p class="library_word">Так же данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;ol&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег создает нумерованный список. Используя тег &lt;li&gt; можно настраивать кол-во элементов списка.<p>
+				 <p class="library_word">Примечательные атрибуты:</p>		
+                 <p class="library_word">type - устанавливает тип нумерации (римские числа, цифры, буквы и т.п.)</p>
+				 <p class="library_word">reversed - устанавливает обратную нумерацию (3,2,1).</p>
+				 <p class="library_word">start - определяет число, с которого начнется нумерация.</p>
+				 <p class="library_word">Так же данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;ul&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег создает маркированный список. Используя тег &lt;li&gt; можно настраивать кол-во элементов списка.<p>
+				 <p class="library_word">Примечательные атрибуты:</p>		
+                 <p class="library_word">type - устанавливает тип маркировки.</p>
+				 <p class="library_word">Так же данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;li&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег создает отдельный элемент списка.<p>
+				 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;table&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег нужен для объявления таблицы. Используя теги &lt;tr&gt; и &lt;td&gt; можно формировать структуру
+				 таблицы (строки и столбцы).</p>	
+                 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;tr&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег создает строку в таблице. Кол-во пар данного тега определяет кол-во строк в таблице.</p>	
+                 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;td&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег создает ячейку в строке (тег должен указываться внутри &lt;tr&gt;). Кол-во пар данного тега определяет кол-во ячеек в строке.</p>	
+                 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;header&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег появился в HTML5 и является контейнером, который располагается вверху блока (шапка сайта). Ранее, чтобы сайт имел 
+				 определенную текстуру, верстальщики задавали данному тегу класс с именем "header".</p>	
+                 <p class="library_word">Стоит заметить, что header может быть частью другого блока (например div), в таком случае header займет
+				 верхушку этого блока. Данный тег является семантическим и предназначен для создания определенной структуры веб-страницы.</p>	
+                 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>				 
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;footer&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег появился в HTML5 и является контейнером, который располагается внизу блока (подвал сайта). Обычно
+				 здесь указывается дополнительная информация о разработчиках, об авторских правах, контактная информация и т.д.</p>
+				 <p class="library_word">Стоит заметить, что footer может быть частью другого блока (например div), в таком случае footer займет
+				 нижнюю часть этого блока. Данный тег является семантическим и предназначен для создания определенной структуры веб-страницы.</p>
+				 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>	
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;main&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег появился в HTML5 и предназначен для хранени основной части веб-страницы.</p>
+				 <p class="library_word">Стоит отметить, что данный тег воспроизводится не всеми браузерами, в связи с чем могут быть проблемы с отображением 
+				 содержимого. На данный момент рекомендуется использовать div, указывая в классе наименование main (не обязательно, но для структуры страницы
+				 будет отличным решением)</p>
+				 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>
+		 </section>	
+		 
+		 <section class="library_tags">
+			     <h2>&lt;aside&gt;</h2>
+				 <hr>
+				 <p class="library_word">Данный тег появился в HTML5 и предназначен для создания боковой панели (sidebar). Обычно здесь указываются
+				 ссылки на другие страницы сайта или дополнительной информации по теме.</p>
+				 <p class="library_word">Допускается создание нескольких aside-ов. Как и в случае с header и footer, данный тег можно располагать внутри другого
+				 блока (например div), в таком случае сайдбар займет боковое положение в блоке.</p>
+				 <p class="library_word">Данный тег имеет универсальные атрибуты (тоесть те, которые можно применить практически ко всем тегам). Сюда можно
+				 отнести class, id и некоторые другие.</p>
+		 </section>	
      </div>
  
-     <footer>
+     <footer title="Разработчик Голинский Назар Евгеньевич Ктбо2-4">
 	     <hr class="footer_line">
 		 <p>HTML</p>
 		 <p>CSS</p>

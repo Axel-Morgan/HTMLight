@@ -1,9 +1,11 @@
 $(function(){
 	 $('#but_1').click(function(event){
-		 var score = 0, num_but = 0;
-		 var answer_1 = [0, 1, 0, 1, 3, 2, 3, 0, 1, 0, 2, 3];
-		 var your_answer = []; 
-		 var sections = $("section");
+		 let num_but = 0;
+		 let answer_1 = [0, 1, 0, 1, 3, 2, 3, 0, 1, 0, 2, 3];
+		 let answer_2 = [1, 1, 3, 0, 2, 1, 0, 2, 0, 1, 3, 2];
+		 let answer_3 = [1, 1, 0, 2, 3, 1, 0, 3, 1, 2, 3, 2];
+		 let your_answer = []; 
+		 let sections = $("section");
 		 
 		 num_but = parseInt($('button[name="q_s"]').val());
 		 $('html, body').animate({scrollTop:0}, 'slow');
@@ -29,7 +31,20 @@ $(function(){
 					 if(answer_1[i] == your_answer[i])$(sections[i]).css('background-color', ' rgba(0,40,0,0.9)');
 					 else $(sections[i]).css('background-color', ' rgba(40,0,0,0.9)')
 			     }
-		 }		 
-		    
-	 });	 
+		 }	
+         else if (num_but == 2){
+			  for (let i =0; i < 12; i++)
+				 {
+					 if(answer_2[i] == your_answer[i])$(sections[i]).css('background-color', ' rgba(0,40,0,0.9)');
+					 else $(sections[i]).css('background-color', ' rgba(40,0,0,0.9)')
+			     }
+		 }			 
+		 else if (num_but == 3){
+			  for (let i =0; i < 12; i++)
+				 {
+					 if(answer_3[i] == your_answer[i])$(sections[i]).css('background-color', ' rgba(0,40,0,0.9)');
+					 else $(sections[i]).css('background-color', ' rgba(40,0,0,0.9)')
+			     }
+		 }			 
+	 });	
 });
