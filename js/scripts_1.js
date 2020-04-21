@@ -43,7 +43,7 @@ $(function(){
 	  $('#libr_4').click(function(event){
           for( var i = 0; i < t; i++)
 		     {
-				 if ((i < 12)||(i > 14)){
+				 if ((i < 14)||(i > 16)){
                      $(libr[i]).addClass('main_tags');
 				 }
 				 
